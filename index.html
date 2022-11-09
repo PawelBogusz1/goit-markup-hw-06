@@ -267,8 +267,9 @@ United States</p>
 </address>
 </div>
    </li>
- <ul>  
-<li><div class="join">
+  
+
+<div class="join">
   <h3 class="head3">DOŁĄCZ DO NAS</h3>
     <ul class="socialicons2">
  <li> <svg class="social2" width="44" height="44">
@@ -285,13 +286,28 @@ United States</p>
         </svg></li>
         </ul>
         </div>
-</li>
- </ul>
+        <ul>
+      <li class="form">
+        <div>
+ <name name="signup_form" autocomplete="on" novalidate>
+   <label for="user-email">ZAPISZ SIĘ DO NEWSLETTERA</label></name>
+  </li>
+  <li class="form2">
+   <input type="email" name="email" id="email" placeholder="E-mail" />
+   
+   <button type="submit" class="email-submit">Zapisz się</button>
+  
+  </form>
+        </div>
+      </li>   
+    </ul>
+</ul>
 </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button type="button" class="close-btn" data-modal-close>X</button>
+      <button type="button" class="close-btn" data-modal-close> <svg class="close">
+          <use href="./images/icons.svg/icons.svg#icon-close"></use></svg></button>
     </div>
   </div>
   <script src="./js/modal.js"></script>
