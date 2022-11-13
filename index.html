@@ -286,9 +286,11 @@ United States</p>
         </svg></li>
         </ul>
         </div>
+        
         <ul>
       <li class="form">
         <div>
+          <form>
  <name name="signup_form" autocomplete="on" novalidate>
    <label for="user-email">ZAPISZ SIĘ DO NEWSLETTERA</label></name>
   </li>
@@ -301,15 +303,65 @@ United States</p>
         </div>
       </li>   
     </ul>
-</ul>
+  </ul>
 </div>
-  </footer>
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button type="button" class="close-btn" data-modal-close> <svg class="close">
-          <use href="./images/icons.svg/icons.svg#icon-close"></use></svg></button>
+</footer>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="close-btn" data-modal-close> <svg class="close">
+      <use href="./images/icons.svg/icons.svg#icon-close"></use></svg></button>
+      
+      
+      <form class="modal-data">
+        <legend>Zostaw swoje dane w formularzu poniżej</legend>
+        <fieldset class="fieldset">
+           <label class="label" for="name">Imię</label>
+           <svg class="iconform">
+             <use href="./images/icons.svg/icons.svg#icon-name"
+             width="12"
+             height="12">
+            </use>
+          </svg>
+          <input class="input" type="text" name="text" id="name" placeholder="Podaj Imię"/>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <label class="label" for="phone">Telefon</label>
+          <svg class="iconform">
+             <use href="./images/icons.svg/icons.svg#icon-tel"
+             width="13"
+             height="13">
+            </use>
+          </svg>
+          <input class="input" type="tel" name="telephone" id="phone" placeholder="000-000-000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"/>
+        </fieldset>
+
+          <fieldset class="fieldset">
+    <label class="label" for="mail">Email</label>
+     <svg class="iconform">
+             <use href="./images/icons.svg/icons.svg#icon-mail"
+             width="15"
+             height="12">
+            </use>
+          </svg>
+          <input class="input" type="email" name="email" id="mail" placeholder="your@mail"/>
+                 </fieldset>
+
+ <fieldset class="fieldset1">
+    <label class="label" for="text">Komentarz</label>
+        <input class="input2" type="text" name="feedback" id="text" placeholder="Wprowadź tekst"></input>
+      
+      </fieldset>
+        <label class="legal-checkbox">
+          <input class="checkbox1" type="checkbox" name="legal" value="legal" />
+          Oświadczam, że akceptuję <a class="legal-link" href="#">Regulamin</a> i <a class="legal-link" href="#">Politykę Prywatności</a>
+          
+          <button type="submit" class="submit-form">Wyślij</button>
+  
+      </form>
     </div>
-  </div>
-  <script src="./js/modal.js"></script>
-</body>
+    </div>
+      
+      <script src="./js/modal.js"></script>
+    </body>
 </html>

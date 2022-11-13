@@ -186,6 +186,20 @@ padding-left:16px;
 color:rgba(255, 255, 255, 0.6);
  }
 
+
+
+ .label{
+    position:absolute
+    top:0px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: #757575;
+ }
+
 .email-submit{
    width:200px;
 Height:50px;
@@ -198,10 +212,116 @@ font-Weight:700;
 font-Size:16px;
 Line height:30px;
 }
+.submit-form{
+   width:200px;
+Height:50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+background-color:var(--brand-color-background4);
+border-radius: 4px;
+margin-top: 30px;
+font-family: Roboto;
+color:var(--brand-color-czcionka3);
+font-Weight:700;
+font-Size:16px;
+Line height:30px;
+}
 
+.fieldset{
+    display:flex;
+    position: relative;
+  width:448px;
+  height: 40px;
+  margin-left: 40px;
+    border-radius: 4px;
+    margin-block: 28px;
+}
+
+.fieldset1{
+  width:448px;
+  height: 120px;
+  margin-left: 40px;
+    border-radius: 4px;
+    margin-block: 28px;
+}
+
+
+.modal-data .input{
+    border: 0;
+    margin-left: 40px;
+    background-color: transparent;
+    font-family: Roboto;
+font-Weight:400;
+font-Size:16px;
+Line height:20px;
+height: 38px;
+width: 200px;
+}
+
+
+
+.checkbox1{
+    margin-left: 55px;
+    position: static;
+    width: 16px;
+    height: 15px;
+}
+.legal-link{
+    color:var(--brand-color-czcionka2);
+}
+
+.modal-data .input:focus{
+    outline:0;
+}
+
+.fieldset:has(input:focus){
+    border-color: #2196f3;
+}
+
+.fieldset:has(input:focus) .iconform{
+    fill: #2196f3;
+}
+
+.modal-data .input2{
+    border: 0;
+    background-color: transparent;
+    width: 416px;
+    height: 96px;
+ font-family: Roboto;
+font-weight:400;
+font-size:12px;
+Line height:14.06px;
+margin-left:16px;
+margin-right:16px;
+display:flex;
+  position:absolute;
+ top:210px;
+}
+
+.modal-data .input2:focus{
+    outline:0;
+}
+
+.fieldset1:has(input:focus){
+    border-color: #2196f3;
+
+}
+
+.modal-data .label{
+ position:absolute;
+ top:-24px;
+
+}
+
+
+
+.iconform{
+    position:absolute;
+    top:14px;
+    left:15px;
+    fill:#212121;
+}
 
  .social{
-   
     margin: 0.0rem;
  padding: 0.6rem;
  Fill: #AFB1B8;
@@ -546,7 +666,6 @@ position: absolute;
 width: 100%;
 height: 70px;
 bottom: 0px;
-
 background: rgba(47, 48, 58, 0.8);
 justify-content:center;
 align-items:center;
