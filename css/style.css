@@ -198,7 +198,20 @@ font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
 color: #757575;
+
  }
+
+  .label1{
+    position:absolute;
+    top:-24px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: #757575;
+  }
 
 .email-submit{
    width:200px;
@@ -211,6 +224,7 @@ color:var(--brand-color-czcionka3);
 font-Weight:700;
 font-Size:16px;
 Line height:30px;
+cursor: pointer;
 }
 .submit-form{
    width:200px;
@@ -224,6 +238,22 @@ color:var(--brand-color-czcionka3);
 font-Weight:700;
 font-Size:16px;
 Line height:30px;
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.legend-modal{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+margin-top: 40px;
 }
 
 .fieldset{
@@ -237,6 +267,8 @@ Line height:30px;
 }
 
 .fieldset1{
+    display:flex;
+    position: relative;
   width:448px;
   height: 120px;
   margin-left: 40px;
@@ -257,13 +289,68 @@ height: 38px;
 width: 200px;
 }
 
+.legal-checkbox{
+         font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #757575;
+position:relative;
+margin-left: 40px;
+}
 
-
-.checkbox1{
-    margin-left: 55px;
-    position: static;
+.legal-checkbox .checkbox1{
+    position: relative;
     width: 16px;
     height: 15px;
+   
+
+}
+
+
+.legal-checkbox input{
+    position:absolute;
+    cursor:pointer;
+    width: 0;
+    height:0;
+    opacity: 0;
+    }
+
+    .legal-checkbox .checkmark{
+        position: absolute;
+        height: 16px;
+        width: 15px;
+        border:1px solid black;
+        cursor: pointer;
+        left:0;
+
+    }
+
+.checkmark::after{
+    display:block;
+content:url(../images/icons.svg/check.svg);
+border:0px solid white;
+position:absolute;
+display: none;
+top:-4px;
+}
+
+    .legal-checkbox input:checked ~ .checkmark::after{
+        display:block;
+    }
+
+     .legal-checkbox input:checked ~ .checkmark{
+        background-color:var(--brand-color-background4);
+         transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     }
+
+.iconsend{
+    fill:var(--brand-color-czcionka3);
+    margin-left: 24px;
 }
 .legal-link{
     color:var(--brand-color-czcionka2);
@@ -275,10 +362,16 @@ width: 200px;
 
 .fieldset:has(input:focus){
     border-color: #2196f3;
+     transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fieldset:has(input:focus) .iconform{
     fill: #2196f3;
+     transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-data .input2{
@@ -292,17 +385,20 @@ font-size:12px;
 Line height:14.06px;
 margin-left:16px;
 margin-right:16px;
-display:flex;
+resize:none;
   position:absolute;
- top:210px;
+
 }
 
 .modal-data .input2:focus{
     outline:0;
 }
 
-.fieldset1:has(input:focus){
+.fieldset1:has(textarea:focus){
     border-color: #2196f3;
+     transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -334,6 +430,10 @@ display:flex;
   .social:hover{
        background: radial-gradient(circle, #2196f3 70%, #ffffff 70%);
       fill:white;
+      transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       
     }
 
 
