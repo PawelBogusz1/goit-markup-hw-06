@@ -159,6 +159,12 @@ flex-grow: 1;
 gap:10px;
 padding-left: 78px;
 padding-top: 72px;
+font-family: Roboto;
+font-weight: 700;
+   font-size: 14px;
+        line-height: 16,41px;
+        letter-spacing: 0.03em;
+        padding-bottom: 10px;
  }
 
  .form2{
@@ -245,7 +251,8 @@ color:var(--brand-color-czcionka3);
 font-Weight:700;
 font-Size:16px;
 Line-height:30px;
-display: block;
+display: flex;
+align-items: center;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
@@ -343,15 +350,17 @@ position:relative;
         left:0;
 
     }
+.checkmark__icon{
+     height: 14px;
+  width: 14px;
+  background-color: var(--white-color);
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  fill:white;
 
-.checkmark::after{
-    display:block;
-content:url(../images/icons.svg/check.svg);
-border:0px solid white;
-position:absolute;
-display: none;
-top:-4px;
 }
+
 
     .legal-checkbox input:checked ~ .checkmark::after{
         display:block;
@@ -364,12 +373,15 @@ top:-4px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
      }
 
+
+
 .iconsend{
     fill:var(--brand-color-czcionka3);
     margin-left: 24px;
     margin-right: 28px;
     display: flexbox;
    align-items: center;
+   
   
 }
 .legal-link{
@@ -380,19 +392,13 @@ top:-4px;
     outline:0;
 }
 
-.fieldset:has(input:focus){
+.modal-data :focus-within{
     border-color: #2196f3;
      transition-property: fill;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.fieldset:has(input:focus) .iconform{
-    fill: #2196f3;
-     transition-property: fill;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 
 .input{
@@ -429,13 +435,8 @@ resize:none;
     outline:0;
 }
 
-.fieldset1:has(textarea:focus){
-    border-color: #2196f3;
-     transition-property: fill;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-}
+
 
 .modal-data .label{
  position:absolute;
@@ -700,10 +701,13 @@ position: relative;
         color:var(--brand-color-czcionka3)
 }
 .head3{
-        font-size: 14px;
-        line-height: 1.14;
+          font-family: Roboto;
+   font-size: 14px;
+   font-weight: 700;
+        line-height: 16,41px;
         letter-spacing: 0.03em;
         padding-bottom: 10px;
+       
 }
 .head31{
         font-size: 16px;
